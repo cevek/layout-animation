@@ -1,0 +1,20 @@
+.circleContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    background-color: sandybrown;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}

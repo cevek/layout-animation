@@ -1,0 +1,20 @@
+.flexContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.topButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightblue;
+}
+
+.colorsContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%
+}

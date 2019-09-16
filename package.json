@@ -1,7 +1,10 @@
 {
   "name": "layout-animation",
   "version": "1.0.0",
-  "description": "",
+  "description": "layout animations with react",
+  "repository": {
+    "url": "https://github.com/FokinAleksandr/layout-animation"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,18 +13,43 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "defaults"
+  ],
   "dependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "style": "0.0.3"
   },
-  "browserslist": [
-    "chrome 76"
-  ],
   "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "prettier": "^1.18.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-react-app": "5.0.1",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
     "parcel-bundler": "^1.12.3",
-    "typescript": "^3.5.3",
-    "@types/react": "^16.9.1",
-    "@types/react-dom": "^16.8.5",
-    "prettier": "^1.18.2"
+    "typescript": "^3.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
