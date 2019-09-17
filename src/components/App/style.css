@@ -27,7 +27,7 @@ button {
 
 .flexAnimations {
   position: absolute;
-  top: 200px;
+  top: 300px;
 }
 
 .heightWidthAnimations {
@@ -37,5 +37,5 @@ button {
 
 .flexOrderAnimations {
   position: absolute;
-  top: 600px;
+  top: 700px;
 }
